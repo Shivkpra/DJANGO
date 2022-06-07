@@ -17,9 +17,6 @@ class UserAdmin(BaseUserAdmin):
     inlines = (EmployeeInline,)
 
 
-# Re-register UserAdmin
-admin.site.unregister(User)
-admin.site.register(User, UserAdmin)
 
 
 # Register your models here.
